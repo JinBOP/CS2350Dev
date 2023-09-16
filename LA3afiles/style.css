@@ -17,12 +17,29 @@ p.special {
     border-style: solid; /*border-style: the type of text border*/
     border-color: #f2d6ba; /*border-color: color of text border*/
     border-width: 5px; /*border-width: thickness of text border*/
-    border: 5px solid #f2d6ba; /*border: condensed version of border-width, border-style, and border-color*/
+    /*border: 5px solid #f2d6ba; border: condensed version of border-width, border-style, and border-color*/
+    width: 4in; /*width: the total width of the content*/
+    padding-right: 10px; /*padding: the space between the content and the border*/
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*padding: 10px 10px 10px 10px; padding: condensed version of padding-top, padding-right, padding-bottom, and padding-left*/
+    margin:48px 12px 48px 12px; /*margin: the space between the border and the rest of the page*/
 }
 
-h1{
+h1 {
     background-color: #e4c29e;
     color: #946433;
     text-align:center;
     
+}
+
+a {
+    text-decoration: none; /*text-decoration: if the text is bolded, underlined, or italicized*/
+    color: #214F5C;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #F2DEC9;
 }
