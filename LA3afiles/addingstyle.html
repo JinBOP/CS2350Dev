@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8">
+
+<title>Learning CSS</title>
+
+<meta name="description" content="A brief introduction to some CSS concepts">
+<meta name="keywords" content="CSS, style, CSS properties, CSS values">
+<meta name="author" content= "Linda DuHadway and ">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>Learning CSS</h1>
+<ul>
+	<li><a href="http://www.csszengarden.com/">Zen Garden</a></li>
+	<li><a href="http://www.w3schools.com/css/default.asp">CSS Tutorial</a></li>
+	<li><a href="http://jawjahboy.com/color-grabber/">Color Grabber</a></li>
+	<li><a href="http://colorschemedesigner.com/">Color Scheme Designer</a></li>
+	<li><a href="https://color.adobe.com/">Adobe Color Wheel</a></li>
+</ul>
+
+<h2>Adding Style Rules</h2>
+<p>Each style block begins with a selector or a series of selectors. These
+selectors specify which tag or tags the style is to be applied to. After the
+selector(s) comes {}s. Within the {}s are one or more style rules.</p>
+
+<p>Each style rule is made up of a property:value pair. The property must 
+be one of the properties defined in CSS. You can find a list of the these
+properties on the <a href="http://www.w3schools.com/cssref/default.asp">
+CSS Reference from W3Schools.</a></p>
+
+<p>Each property has specific values that are allowed for that property. 
+Values come in a variety of types. Below is a table of the types of 
+values that are possible.</p>
+
+<h2>Value Types</h2>
+<table>
+	<tr>
+		<th>Value Type</th>
+		<th>Description</th>
+		<th>Specifics</th>
+	</tr>
+	<tr>
+		<td>Keyword</td>
+		<td>A specific word used exactly.</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Length</td>
+		<td>A number followed immediately (no space) by two letters 
+		that specify units.</td>
+		<td>in - inches<br>
+				cm - centimeters<br>
+				em - Em-height<br>
+				ex - x-height<br> 
+				mm - millimeters<br>
+				pt - point<br>
+				pc - picas<br>
+				px - pixels</td>
+		</tr>
+	<tr>
+		<td>Color</td>
+		<td>One of the following representations for color.</td>
+		<td>#RRGGBB<br>
+			#RGB<br>
+			rgb(rrr.rr%, ggg.gg%, bbb.bb%)<br>
+			rgb(rrr, ggg, bbb)<br>
+			keyword</td>
+	</tr>
+	<tr>
+		<td>Percentage</td>
+		<td>A number followed by %. This value is computed relative to 
+		another value.</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>url</td>
+		<td>Uses the form url(path/filename)</td>
+		<td></td>
+	</tr>
+</table>
+
+<img src="images/wiseimg2.jpg" alt="Image from the WISE telescope"
+	width="500" height="500">
+
+<h2>Browser Style Sheets</h2>
+<p>Browsers have a style sheet. This is called the user agent style sheet. 
+These provide the default style to be used whenever there is no other style
+specified. The default style rules vary depending on what browser is being 
+used. Because of these variations some recommend that a reset style sheet 
+be used. A reset style sheet gets rid of much of the existing style and 
+lets the web developer start with a clean slate no matter which browser 
+is being used.</p>
+
+<h2>Navigation Lists</h2>
+<p>A common way to create navigation is to use a list. But most navigation
+does not look like a list. To get a list to work for navigation, the styles 
+of the ul and li tags are changed.</p> 
+
+</body>
+</html>
