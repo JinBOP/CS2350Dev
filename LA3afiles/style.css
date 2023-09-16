@@ -7,7 +7,11 @@ E4C29E  AB9884  946433  F2D6BA  F2DEC9		peachy tan
 
 body { /*Rule*/
     /*#000000 is hexadecimal RGB colors*/
-    background-color: #64858E; /*Declaration*/   
+    background-color: #64858E; /*Declaration*/
+    background-image: url(images/wiseimg8.jpg); /*background-image: sets an image to be the page background, overwrites background-color*/
+    background-repeat:repeat-y;
+    background-position: center top;
+    /*background: #64858E url(images/wiseimg8.jpg) repeat-y center top; background: condensed version of background-color, background-image, background-repeat, and background-position*/  
 }
 
 p.special {
@@ -27,6 +31,10 @@ p.special {
     margin:48px 12px 48px 12px; /*margin: the space between the border and the rest of the page*/
 }
 
+p.special:hover {
+    background-color: #E4C29E;
+}
+
 h1 {
     background-color: #e4c29e;
     color: #946433;
@@ -39,7 +47,23 @@ a {
     color: #214F5C;
 }
 
-a:visited {
+a:visited { /*accent selector*/
     text-decoration: none;
     color: #F2DEC9;
+}
+
+table {
+    border: solid 3px #F2D6BA;
+    border-collapse: collapse; /*border-collapse: combines borders to be more uniform*/
+    margin: 48px 12px;
+}
+
+td {
+    border: solid 3px #F2D6BA;
+    padding: 5px 5px 5px 5px;
+}
+
+th {
+    border: solid 3px #F2D6BA;
+    padding: 5px 5px 5px 5px;
 }
