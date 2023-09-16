@@ -5,13 +5,23 @@ green   #82B246  #9ECC65 (light)
 gray    #333  #777  #CCC (light)  
 white   #FFF 
 */
+@font-face {
+  font-family: droid;
+  src: url(droid_sans.ttf)
+}
 
 h2 {
   color: #5E73B2;
 }
 
 .leading {
-
+  text-align:center;
+  width:520px;
+  margin: auto auto;
+  border: #ff7f5e dashed 3px;
+  padding: 12px 15px;
+  font-family: droid; /*font-family: defines the font the text uses for its content*/
+  box-shadow: ;
 }
 
 .article {
