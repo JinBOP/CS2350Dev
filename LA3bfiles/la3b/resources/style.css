@@ -21,11 +21,15 @@ h2 {
   border: #ff7f5e dashed 3px;
   padding: 12px 15px;
   font-family: droid; /*font-family: defines the font the text uses for its content*/
-  box-shadow: ;
+  box-shadow: 6px 2px 4px #ff7f5e; /*box-shadow: gives a box a drop shadow to help it pop, values ordered: left-right, up-down, blur, color*/
+}
+
+.leading h3 {
+  text-shadow: 4px 4px 2px #ccc; /*text-shadow: gives a bit of text a drop shadow to help it pop*/
 }
 
 .article {
-  
+  box-shadow: 4px 4px 8px #ccc;
 }
 
 .testing {
