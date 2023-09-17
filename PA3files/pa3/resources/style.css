@@ -18,3 +18,54 @@ h4 {
   color: #11073B;
   font-size: large;
 }
+
+.two_ways {
+  text-align: center;
+ }
+
+ .center1 {
+  text-align: center;
+ }
+
+ .center2 {
+  text-align: center;
+  width: 480px;
+ }
+
+ .center3 {
+  text-align: center;
+  width: 75%;
+ }
+
+ .image_in_div {
+  text-align: center;
+ }
+
+ .uncontained_image {
+  text-align: center;
+ }
+
+ .list1 {
+  text-align: center;
+ }
+
+ .list2 {
+  width: 420px;
+  margin: auto;
+ }
+
+ table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+ }
+
+ th {
+  border: groove 3px #11073B;
+  padding: 10px 2px;
+ }
+
+ td {
+  border: groove 2px #11073B;
+  padding: 10px 2px;
+ }
