@@ -39,19 +39,28 @@ h2 {
 
 .distributed {
   position: static; /*position: */
+  transform: rotate(30deg) /*rotate(): rotates from respect to the center by a certain degree*/
 }
 
 .interleaved {
   position: relative; /*relative position requires left and top values, moving from original position*/
   left: 100px;
   top: 10px;
+  transform: skewX(30deg) ; /*skewx(): shift top and bottom from one another by a certain degree*/
 }
 
 .interrogation {
   position: fixed; /*fixed position anchors the box to somewhere on the browser screen itself*/
-  left: 0px;
+  top: 0px;
   right: 0px;
   z-index: 2;
+  transition: transform(2s); /*transition: adjusts the time it takes for a change to happen*/
+}
+
+.interrogation:hover {
+  transform: scale(1.5); /*scale(): changes the scale of an image by a certain factor*/
+  top: 50px;
+  right: 75px;
 }
 
 .explain {
