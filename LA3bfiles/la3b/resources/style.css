@@ -54,7 +54,7 @@ h2 {
   top: 0px;
   right: 0px;
   z-index: 2;
-  transition: transform(2s); /*transition: adjusts the time it takes for a change to happen*/
+  transition: transform 2s; /*transition: adjusts the time it takes for a change to happen*/
 }
 
 .interrogation:hover {

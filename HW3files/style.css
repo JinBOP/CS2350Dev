@@ -95,3 +95,22 @@
     background-color: #DF4E4E;
     color:#8B8E57;
 }
+
+.relative {
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+
+.absolute {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+}
