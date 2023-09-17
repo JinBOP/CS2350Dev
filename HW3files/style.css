@@ -1,20 +1,43 @@
 .div1 {
-    background-color: red;
-    border: 5px dashed green;
+    background-color: #ff0000;
+    border: 5px dashed #008000;
     width: 480px;
     padding: 20px;
 }
 
 .div2 {
-    background-color: orange;
-    border: 5px dotted blue;
+    background-color: #ffa500;
+    border: 5px dotted #0000ff;
     width: 480px;
     padding: 30px 100px;
 }
 
 .div3 {
-    background-color: purple;
-    border: 5px double cyan;
+    background-color: #800080;
+    border: 5px double #00ffff;
     width: 480px;
     padding: 25px 50px 75px 100px;
+}
+
+.div4 {
+    background-color: #00ffff;
+    border: 5px groove #008080;
+    width: 275px;
+    padding: 50px;
+}
+
+.div5 {
+    background-color: #2e8b57;
+    border: 5px ridge  #da70d6;
+    width: 275px;
+    padding: 50px;
+    margin-left: 50px;
+}
+
+.div6 {
+    background-color: #ffd700;
+    border: 5px outset #9acd32;
+    width: 275px;
+    padding: 50px;
+    margin-left: 120px;
 }
