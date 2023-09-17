@@ -1,0 +1,20 @@
+.div1 {
+    background-color: red;
+    border: 5px dashed green;
+    width: 480px;
+    padding: 20px;
+}
+
+.div2 {
+    background-color: orange;
+    border: 5px dotted blue;
+    width: 480px;
+    padding: 30px 100px;
+}
+
+.div3 {
+    background-color: purple;
+    border: 5px double cyan;
+    width: 480px;
+    padding: 25px 50px 75px 100px;
+}
