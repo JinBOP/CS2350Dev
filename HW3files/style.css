@@ -51,7 +51,7 @@
 
 .div8 {
     background-color: #00008b;
-    border: 5px inherit #ff8c00;
+    border: 5px outset #ff8c00;
     width: 275px;
     padding: 50px;
     transition: background-color 4s;
@@ -63,7 +63,7 @@
 
 .div9 {
     background-color: #a9a9a9;
-    border: 5px initial #ffb6c1;
+    border: 5px ridge #ffb6c1;
     width: 275px;
     padding: 50px;
     transition: width 2s;
