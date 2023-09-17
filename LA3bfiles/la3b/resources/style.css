@@ -22,6 +22,7 @@ h2 {
   padding: 12px 15px;
   font-family: droid; /*font-family: defines the font the text uses for its content*/
   box-shadow: 6px 2px 4px #ff7f5e; /*box-shadow: gives a box a drop shadow to help it pop, values ordered: left-right, up-down, blur, color*/
+  border-radius: 24px 24px 0px 0px;
 }
 
 .leading h3 {
@@ -33,21 +34,32 @@ h2 {
 }
 
 .testing {
-  
+  border-radius: 24px; /*border-radius: rounds the corners of an image, values ordered: top-left, top-right, bottom-right, bottom-left*/  
 }
 
 .distributed {
-
+  position: static; /*position: */
 }
 
 .interleaved {
-
+  position: relative; /*relative position requires left and top values, moving from original position*/
+  left: 100px;
+  top: 10px;
 }
 
 .interrogation {
-
+  position: fixed; /*fixed position anchors the box to somewhere on the browser screen itself*/
+  left: 0px;
+  right: 0px;
+  z-index: 2;
 }
 
 .explain {
-  
+  position:absolute; /*absolute position anchors the box to part of the webpage itself and moves relative to the webpage as a whole*/
+  top: 60px;
+  right: 60px;
+}
+
+.explanation {
+  position: relative;
 }
