@@ -72,3 +72,26 @@
 .div9:hover {
     width: 550px;
 }
+
+.td1 {
+    background-color: #0000FF;
+    color: #FF0000;
+}
+
+.td2 {
+    background-color: #0000FF;
+    color:#00FF00;
+}
+
+.td3 {
+    background-color: #800080;
+    color:#00FFFF;
+}
+.td4 {
+    background-color: #66A971;
+    color:#2D1616;
+}
+.td5 {
+    background-color: #DF4E4E;
+    color:#8B8E57;
+}
