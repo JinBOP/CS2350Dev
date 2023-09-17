@@ -102,3 +102,37 @@ h4 {
  .background6 {
   background: #877CB0 url("bright_squares.png");
  }
+
+ @font-face {
+  font-family: sofia;
+  src: url(sofia.otf)
+}
+
+.sign h2 {
+  font-family: sofia;
+  font-size: 7em;
+  text-shadow: 2px 2px 4px #f9cf00;
+  color: #4484ce;
+  text-align: center;
+}
+
+.sign {
+  width: 860px;
+  height: 600px;
+  border: 38px solid #f19f4d;
+  border-radius: 24px 24px 24px 24px;
+  box-shadow: 6px 6px 18px #f19f4d, -6px -6px 18px #f19f4d;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[class^="css"] {
+  float: left;
+  margin: 12px;
+} 
+
+.end {
+  clear: both;
+}
