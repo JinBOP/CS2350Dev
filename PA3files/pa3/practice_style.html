@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8">
+
+<title>Learning CSS</title>
+
+<meta name="description"
+content="A brief introduction centering, background and float">
+<meta name="keywords" content="CSS, style, CSS properties, CSS values, centering with CSS, CSS background properties, float, clear">
+<meta name="author" content= "Linda DuHadway and ">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link ref="stylesheet" href="resources/style.css">
+</head>
+
+<body>
+
+<h1>Learning CSS</h1>
+
+<p>This web page already contains the content and HTML you will need to
+  complete the activity. All you need to do is add the style. There is a file
+  called style.css in the resources folder. To connect this stylesheet, a link
+  tag will need to be added to this .html file. Since it is in the resources
+  folder, you will need to include the folder name, resources, in the href
+  attribute.</p>
+<p>To do this activity, complete each of numbered instructions.</p>
+<ol>
+	<li>Add a link tag to this .html file that will connect it to the
+	   style.css file.</li>
+</ol>
+<p>There are a few style blocks already in the style.css file. You will be
+  able to tell right away if the files are connected correctly. You will be
+  adding more style as you complete the instructions.</p>
+
+<section>
+<h2 class="two_ways">Two Ways to Center</h2>
+
+<h3>Using the text-align property</h3>
+<p>The simplest way to center is to use the text-align property. This
+  works in many situations. It works great for centering headings.</p>
+<ol start="2">
+	<li>Add a style rule that sets the text-align property to center on the h2
+	   with class="two_ways". It is the heading at the top of this section.</li>
+</ol>
+<p>It can center text in a paragraph.</p>
+<ol start="3">
+	<li>Add a style rule that sets the text-align property to center on the
+	   following p element.</li>
+</ol>
+<p class="center1">When you change the size of the browser window, the text
+  spreads across the entire window. Lorem ipsum dolor sit amet, consectetur
+  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu.</p>
+<ol start="4">
+	<li>Add a style rule that sets the text-align property to center on the
+	   following p element.</li>
+	<li>Add a style rule that sets the width property to 480px on the
+	   following p element.</li>
+</ol>
+<p class="center2">When you use a length value for width on this p element,
+  it keeps the text spread across the specified width no matter how narrow
+  or wide the browser window is. Lorem ipsum dolor sit amet, consectetur
+  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu.</p>
+<ol start="6">
+	<li>Add a style rule that sets the text-align property to center on the
+	   following p element.</li>
+	<li>Add a style rule that sets the width property to 75% on the following
+	   p element.</li>
+</ol>
+<p class="center3">When you use a % value for width, the paragraph changes
+  sizes as you change the size of the browser window. Lorem ipsum dolor sit
+  amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+  labore et dolore magna aliqua. Tincidunt tortor aliquam nulla facilisi cras
+  fermentum odio eu.</p>
+<p>The text-align property is an easy way to center an image that is inside
+  a div or other containing element like a paragraph. You can set the
+  text-align property of a containing element to center the image it contains.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Tincidunt tortor aliquam
+  nulla facilisi cras fermentum odio eu.</p>
+<ol start="8">
+	<li>Add a style rule that sets the text-align property to center on the
+	   following div (will not center in the webpage).</li>
+</ol>
+<div class="image_in_div"><img src="resources/parasail.jpg"
+	alt="A person parasailing in a field" width="400" height="533"></div>
+<p>Now try adding the text-align property to the following image that is not
+  in any container. See how it does not center. When you want to center an
+  image, it is easy to put it in a container and set the text-align property
+  of the container to center.</p>
+<ol start="9">
+	<li>Add a style rule that sets the text-align property to center on the
+	   following image.</li>
+</ol>
+<img class="uncontained_image" src="resources/mud.jpg"
+	alt="Two boys riding a 4-wheeler in the mud" width="400" height="300">
+<p>Strange things happen when you use text-align to center a list.</p>
+<ol start="10">
+	<li>Add a style rule that sets the text-align property to center on the
+	following list.</li>
+</ol>
+<ul class="list1">
+	<li>pharetra vel turpis nunc eget lorem</li>
+	<li>facilisis sed odio morbi quis commodo odio aenean</li>
+	<li>odio aenean sed adipiscing diam</li>
+</ul>
+
+<h3>Using display, width, and margin properties</h3>
+<p>This section demonstrates a way to center that requires three style
+  properties be considered.</p>
+<ol start="11">
+	<li>Add a style rule that sets the width property of the following ul
+	   element to 420px.</li>
+	<li>Add a style rule that sets the margin property to auto on the
+	   following ul element.</li>
+</ol>
+<ul class="list2">
+	<li>display: block</li>
+	<li>width: * must have a specific width</li>
+	<li>margin-right and margin-left must be set the same. The easiest way
+	   to do this is margin: auto; </li>
+</ul>
+<p>Notice that it centered the list including the bullets. We did not have
+  to set the display property because the default display property of the ul
+  is block.</p>
+<p>There are several things to do on the following table. First we will add
+  borders and padding.</p>
+<ol start="13">
+	<li>Add a style rule that sets the border property of the th and td
+    elements. You choose a border width, border color, and border style. 
+    I have use a width of 2 pixels, color #000000, and style solid. Pick 
+    different values for each of these properties. Your table will look 
+    different than the one in the example.</li>
+	<li>Add a style rule that sets the padding property of the td and th
+    cells. You choose	the padding value.</li>
+	<li>Add a style rule that sets the border-collapse property of the table
+  	to collapse. Notice that this property needs to be used with the selector
+  	table (NOT th or td).</li>
+</ol>
+<p>Now let's center the table.</p>
+<ol start="16">
+	<li>Add a style rule that sets the width property of the table to 60%.</li>
+	<li>Add a style rule that sets the margin property of the table to auto.
+	 </li>
+</ol>
+<table>
+	<caption><h4>To center, what properties need to be set using CSS?</h4>
+	</caption>
+	<tr>
+		<th>HTML</th>
+		<th colspan="2">display: block</th>
+		<th colspan="2">width: *</th>
+		<th colspan="2">margin-right & margin-left</th>
+	</tr>
+	<tr>
+		<th>Element</th>
+		<th>default</th><th>Set in CSS</th>
+		<th>default</th><th>Set in CSS</th>
+		<th>default</th><th>Set in CSS</th>
+	</tr>
+	<tr>
+		<td>table</td>
+		<td>block</td><td>no</td>
+		<td>auto</td><td>yes</td>
+		<td>0</td><td>yes</td>
+	</tr>
+	<tr>
+		<td>p</td>
+		<td>block</td><td>no</td>
+		<td>auto</td><td>yes</td>
+		<td>0</td><td>yes</td>
+	</tr>
+	<tr>
+		<td>div</td>
+		<td>block</td><td>no</td>
+		<td>auto</td><td>yes</td>
+		<td>0</td><td>yes</td>
+	</tr>
+	<tr>
+		<td>h1-h6</td>
+		<td>block</td><td>no</td>
+		<td>auto</td><td>yes</td>
+		<td>0</td><td>yes</td>
+	</tr>
+	<tr>
+		<td>ul or ol</td>
+		<td>block</td><td>no</td>
+		<td>auto</td><td>yes</td>
+		<td>varies by browser</td><td>yes</td>
+	</tr>
+	<tr>
+		<td>img</td>
+		<td>inline</td><td>yes</td>
+		<td>auto</td><td>no</td>
+		<td>0</td><td>yes</td>
+	</tr>
+	<tr>
+		<td>span</td>
+		<td>inline</td><td>yes</td>
+		<td>auto</td><td>yes</td>
+		<td>0</td><td>yes</td>
+	</tr>
+</table>
+
+<h3>Bottom Line</h3>
+<p>Try text-align first. If that does not produce the result you are hoping
+  for, try the second approach to centering.</p>
+</section>
+
+<section>
+<h2>Playing with the Background</h2>
+<p>In this section we are going to play with the following background
+  properties.</p>
+<ul>
+	<li>background-color</li>
+	<li>background-image</li>
+	<li>background-position</li>
+	<li>background-repeat</li>
+</ul>
+<p>All of these properties can be set at one time with the combined
+  background property. There are some other properties that can be set. You
+  can find these additional properties explained on w3schools reference on
+  the <a href="https://www.w3schools.com/cssref/css3_pr_background.asp"
+  title="Go to the CSS background Property reference at w3schools.">CSS
+  background Property.</a> </p>
+<p>To start with we want to make all the divs in this section big enough to
+  see the background well. Notice how the class values all start with
+  background followed by a number. You can use the CSS [attribute^=value]
+  selector to select all elements with a class that begins with the same
+  characters. In this case we would use the selector:
+  <span>[class^="background"]</span>
+  This will select all elements that have a class attribute beginning with
+  background.</p>
+<ol start="18">
+	<li>Use the attribute selector to set the width to 600px and the height
+	to 400px for all the background divs. </li>
+	<li>Using this same selector, set the border property to 4px solid
+	#3E3175.</li>
+	<li>Using this same selector, set the margin-top property to 24px.</li>
+	<li>Finally, set the margin-right and margin-left properties to auto.
+	This will center the divs because we have already set a width. Notice how
+	we could not use the combined margin property on this one or it would
+	override out margin-top property that was previously set.</li>
+</ol>
+<p>That is the end of the style we want to add to all these divs. Now we
+  will select each div individually so we can make the background style for
+  each one different. To do this use the following selectors: .background1,
+  .background2, .background3, .background4,.background5, and .background6.</p>
+<p>Notice how we can cover the background entirely, in just one spot, make
+  a strip, or add a transparent texture. Solid background colors can be bold
+  or harsh. The transparent textures allow you to keep the background color
+  but adds texture and softens it.</p>
+<ol start="22">
+	<li>Using the following selectors: .background1, .background2,
+	.background3, .background4,.background5, and .background6 add the
+	background property listed in each div.</li>
+</ol>
+<p>Notice how the name of the image file does not include the resources
+  folder name. This is because the .css file is in the resources folder so
+  when we want to access an image from the .css file, there is no need to
+  change folders.</p>
+<div class="background1">
+	<h4>background: #877CB0 url("cube_corner.png");</h4>
+</div>
+<div class="background2">
+	<h4>background: #877CB0 url("cube_corner.png") no-repeat top center;</h4>
+</div>
+<div class="background3">
+	<h4>background: #877CB0 url("cube_corner.png") repeat-y center right;</h4>
+</div>
+<div class="background4">
+	<h4>background: #877CB0 url("arches.png");</h4>
+</div>
+<div class="background5">
+	<h4>background: #877CB0 url("grunge.png");</h4>
+</div>
+<div class="background6">
+	<h4>background: #877CB0 url("bright_squares.png");</h4>
+</div>
+
+</section>
+
+<section>
+<h2>Font and Borders</h2>
+<p>This section demonstrates how a div can be turned into a sign.</p>
+<p>Notice the div below that has class set to sign. Make the following
+  changes apply to this div. When setting style on the h2 be sure it only
+  applies to the h2 elements in this div.</p>
+
+<h3>@font-face</h3>
+<ol start="23">
+  <li>In the resources file is a font file named sofia.otf. Add an
+    @font-face rule so this font can be used. Include the font-family property
+    and the src property.</li>
+</ol>
+
+<h3>h2</h3>
+<p>When setting style on the h2 be sure it only applies to the h2 elements
+  in this div. Set the following style on the h2 elements in the div with
+  class set to sign.</p>
+<ol start="24">
+  <li>Set the font-family on to the font you added above.</li>
+  <li>Set the font size to 7em. em is a unit that is relative to the size
+    of the font in the body. Using em instead of px for font sizes
+    provides a more efficient way to adapt web pages for a variety of
+    screen sizes.</li>
+  <li>Add a shadow on the text. Use 2px for the h-shadow, 2px for the
+    v-shadow, 4px for the blur and #F9CF00.</li>
+  <li>Set the color of the text to #4484CE.</li>
+  <li>Set the alignment to center.</li>
+</ol>
+
+<h3>div</h3>
+<ol start="29">
+  <li>Set the size of the div to 860px wide by 600px high.</li>
+  <li>Set the border to be 38px wide, the color #F19F4D, and solid.</li>
+  <li>Add a 24px radius on all four corners of the border.</li>
+  <li>Add a shadow on all four sides of the border. This will take one
+    box-shadow style rule with two sets of values. The first set will be
+    for the right and bottom shadow. The second set will be for the left
+    and top shadow. Separate the sets with a comma.
+    <ul>
+      <li>First set: Use 6px for the h-offset, 6px for the v-offset, 18px
+        for the blur and #F19F4D.</li>
+      <li>Second set: Use -6px for the h-offset, -6px for the v-offset,
+        18px for the blur and #F19F4D.</li>
+    </ul>
+  </li>
+  <li>Add some space by setting the top and bottom margins to 64px.</li>
+  <li>Center the div on the page. Remember the three things needed to
+    center are block display, specific width, and left/right margins. The
+    div has a block display so no change is needed for that. We already
+    set a specific width so that is done. Now set the left and right
+    margins to auto. This will center the div in the web page.</li>
+</ol>
+
+<div class="sign">
+<h2>Sue's Diner</h2>
+<h2>Grand Opening</h2>
+</div>
+</section>
+
+<section>
+<h2>Using Float and Clear</h2>
+<p>Using float can create interesting effects. It can also create unwanted
+  side effects. When using float pay particular attention to how it looks as
+  you resize the browser window.</p>
+<p>Notice how the class values all start with css followed by a number. You
+  can use the CSS [attribute^=value] selector to select all elements with a
+  class that begins with the same characters. In this case we would use the
+  selector:
+  <span>[class^="css"]</span>
+  This will select all elements that have a class attribute beginning with
+  css.</p>
+
+<ol start="35">
+	<li>Use the attribute selector to set the float property to left for all
+	   the css paragraphs. </li>
+	<li>Using this same selector, set the margin property to 12px.</li>
+</ol>
+<p>Notice how they are taken out of the normal flow of the HTML. The body
+  element expands to contain all the content that is inside the body tags. But
+  since all these paragraphs have their float property set, they are outside the
+  normal flow and are no longer contained inside the body.</p>
+<p>To fix this, we can add an	element below the paragraphs and set the clear
+  property to none. It is often a good idea to add such a clearing element
+  after float is used. I have added an empty div just for this purpose.</p>
+<ol start="37">
+	<li>After you have seen the images spill out of the body, add a style rule
+	   that sets the clear property of the empty div to both.</li>
+	<li>Verify the body extends to include this empty div. Since the div stays
+  	after the floating paragraphs (because of the clear property), the images
+    also stay within the body.</li>
+</ol>
+
+<p class="css1"><img src="resources/box.png"
+	alt="A diagram of the CSS box model" width="320" height="155"></p>
+<p class="css2"><img src="resources/css_icon.png"
+	alt="An icon with CSS on a screen" width="320" height="320"></p>
+<p class="css3"><img src="resources/float.png"
+	alt="Two layouts created with float" width="320" height="183"></p>
+<p class="css4"><img src="resources/hover.png"
+	alt="The words Hover Effects with CSS" width="320" height="320"></p>
+<p class="css5"><img src="resources/html_css.png"
+	alt="<html> .css{}" width="320" height="349"></p>
+<p class="css6"><img src="resources/repeat.png"
+	alt="A repeated cube  image" width="320" height="320"></p>
+
+<div class="end"></div>
+</section>
+</body>
+</html>

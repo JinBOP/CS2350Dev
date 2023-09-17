@@ -1,0 +1,20 @@
+html {
+  background-color: #3E3175;
+}
+
+body {
+  background-color: #FFFFFF;
+  margin: 96px;
+  padding: 24px;
+}
+
+span {
+  display:block;
+  padding: 12px 32px;
+}
+
+h4 {  
+  margin: 12px 24px;
+  color: #11073B;
+  font-size: large;
+}
