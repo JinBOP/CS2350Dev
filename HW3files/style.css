@@ -41,3 +41,34 @@
     padding: 50px;
     margin-left: 120px;
 }
+
+.div7 {
+    background-color: #b8860b;
+    border: 5px hidden #9932cc;
+    width: 275px;
+    padding: 50px;
+}
+
+.div8 {
+    background-color: #00008b;
+    border: 5px inherit #ff8c00;
+    width: 275px;
+    padding: 50px;
+    transition: background-color 4s;
+}
+
+.div8:hover {
+    background-color: #ff8c00;
+}
+
+.div9 {
+    background-color: #a9a9a9;
+    border: 5px initial #ffb6c1;
+    width: 275px;
+    padding: 50px;
+    transition: width 2s;
+}
+
+.div9:hover {
+    width: 550px;
+}
