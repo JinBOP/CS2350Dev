@@ -1,0 +1,48 @@
+color scheme:
+/* color scheme
+Light Green Grey
+  Lightest: #FFF
+  Lighter: #F7FAF9
+  Light Green Grey: #DCEBE6
+  Darker: #B2D2C8
+  Darkest: #7DB09F
+
+Dark Blue
+  Lightest: #000  
+  Lighter: #20516B
+  Dark Blue: #0D3C55
+  Darker: #03283C
+  Darkest: #011723
+*/
+
+background: 
+  white
+
+font: 
+  roboto.ttf
+
+text color:
+darkest blue #011723
+
+links: 
+link, visited, active
+lighter blue #20516B
+bold
+no underline
+transition: 1s background-color
+
+on hover
+add background-color
+Light Green Grey #DCEBE6
+
+h1-h6:
+color
+Dark Blue #0D3C55
+default size
+
+margin:
+all 0
+
+padding:
+top & bottom 0 
+left & right 4%

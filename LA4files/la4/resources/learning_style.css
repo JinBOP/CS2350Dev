@@ -1,0 +1,77 @@
+/*Color scheme
+orange  #FF7F5E  
+blue    #5E73B2  #9FB6FF (light)
+green   #82B246  #9ECC65 (light)
+gray    #333  #777  #CCC (light)  
+white   #FFF 
+*/
+
+@font-face {
+  font-family: droid;
+  src: url(droid_sans.ttf);
+}
+
+h2 {
+  color: #5E73B2;
+}
+
+.leading {
+  text-align: center;
+  width: 520px;
+  margin: auto;
+  border-bottom: #FF7F5E dashed 3px;
+  padding: 12px 15px;
+  font-family: droid;
+  box-shadow: 6px 2px 8px #FF7F5E, -2px -2px 4px #FF7F5E;
+  border-radius: 24px 0;
+}
+
+.leading h3 {
+  text-shadow: 2px 2px 1px #CCC;
+}
+
+.article {
+  box-shadow: 4px 4px 8px #CCC,  -2px -2px 4px #CCC;
+  padding-left: 24px;
+}
+
+.testing {
+  border-radius: 24px 60px 90px 120px;
+}
+
+.distributed {
+  position: relative;
+  left: 180px;
+  transform: rotate(-15deg);
+}
+
+.interleaved {
+  position: relative;
+  left: 240px;
+  transform: skewX(30deg);
+}
+
+.interrogation {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+  margin-right: 0;
+  transition: transform 3s, top 3s, right 3s;
+}
+
+.interrogation:hover {
+  transform: scale(1.5);
+  top: 50px;
+  right: 75px;
+}
+
+.explain {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+}
+
+.explanation {
+  position: relative;
+}
