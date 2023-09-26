@@ -52,6 +52,32 @@ header p {
     border-radius:86px;
 }
 
+nav ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+
+nav a:link, nav a:visited {
+    display:block;
+    background:color#021E2D;
+    height:46px;
+    width:180px;
+    line-height:46px;
+    border:#021E2D 2px solid;
+    text-decoration:none;
+    text-align:center;
+    border-radius:24px;
+    font-size:20px;
+    font-weight:bolder;
+}
+
+nav a:hover {
+    background-color:#FFF2BF;
+    color:#001018;
+}
+
+
 a, a:link, a:visited {
     color:#FFF2BF;
     text-decoration:underline;
