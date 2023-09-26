@@ -1,0 +1,37 @@
+Common Style Decisions for Website
+
+color scheme:
+Tan:
+Sandstone #f5f5dc
+Sandy #deb887
+Gravel #bd9357
+Dirt #755121
+Mud #030201
+
+background color/image: 
+    image: watercolor.png
+    color: #deb887
+
+font style: 
+    'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+text color:
+    #f5f5dc
+
+link style: 
+    color: #755121
+    Bolder
+
+link style on hover:
+    color: #030201
+
+h1-h6 style:
+    Default Size
+    Color: #bd9357
+
+margins:
+    10%
+
+padding:
+    15px top & bottom
+    30px left & right
