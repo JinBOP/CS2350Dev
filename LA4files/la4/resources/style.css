@@ -14,4 +14,36 @@ Dark Blue
   Darkest: #011723
 */
 
+@font-face {
+  font-family: roboto;
+  src: url(roboto.ttf);
+}
 
+body {
+  font: roboto;
+  color: #011723;
+  margin: 0;
+  padding: 0 4%;
+}
+
+a, a:link, a:visited {
+  color: #20516B;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 1s background-color;
+}
+
+a:hover {
+  background-color: #DCEBE6;
+}
+
+a:active {
+  color: #20516B;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 1s background-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0D3C55;
+}
