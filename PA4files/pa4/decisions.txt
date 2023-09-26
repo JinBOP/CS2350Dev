@@ -1,0 +1,47 @@
+Common Style Decisions for Website
+
+color scheme:
+Dark blue:
+Lighest blue #336078
+Ligher blue #19475F
+Dark blue #083045
+Darker blue #021E2D
+Darkest blue #001018
+
+Yellow:
+Lightest Yellow #FFF2BF
+Lighter Yellow #FFEA96
+Yellow #EED369
+Darker Yellow #CDB041
+Darkest Yellow AA8E21
+
+
+background: 
+  dark image: stardust.png
+  Darkest blue #021E2D
+
+font: 
+  lora.ttf
+
+text color:
+  Yellow #EED369
+
+links: 
+  Lightest Yellow #FFF2BF
+  underlined
+
+links on hover:
+  Darker Yellow #CDB041
+  remove underline
+
+h1-h6:
+  Default Size
+  Darker Yellow #CDB041
+  h1 - centered
+
+margin:
+  0
+
+padding:
+  24px top & bottom
+  48px left & right
