@@ -28,6 +28,30 @@ body {
     padding: 24px, 48px;
 }
 
+header {
+    padding-top: 60px;
+    height: 120px;
+    background-image:url(science.png);
+    background-repeat:repeat-x;
+    background-position:center;
+    margin-left:-48px;
+    margin-right:-48px;
+    margin-bottom:24px;
+}
+
+header p {
+    height:82px;
+    width:420px;
+    background-color:#021E2D;
+    color:#FFF2BF;
+    font-size:46px;
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+    line-height:82px;
+    border-radius:86px;
+}
+
 a, a:link, a:visited {
     color:#FFF2BF;
     text-decoration:underline;
