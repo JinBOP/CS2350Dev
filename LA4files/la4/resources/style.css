@@ -7,7 +7,7 @@ Light Green Grey
   Darkest: #7DB09F
 
 Dark Blue
-  Lightest: #000 
+  Lightest: #000
   Lighter: #20516B
   Dark Blue: #0D3C55
   Darker: #03283C
@@ -24,6 +24,22 @@ body {
   color: #011723;
   margin: 0;
   padding: 0 4%;
+}
+
+header {
+  background-color: #20516B;
+  height: 200px;
+}
+
+header img {
+  float: left;
+  padding-left: 24px;
+}
+
+header h1 {
+  color: #DCEBE6;
+  padding-left: 320px;
+  padding-top: 80px;
 }
 
 a, a:link, a:visited {
