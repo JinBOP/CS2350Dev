@@ -53,16 +53,16 @@ h2 {
 
 .interrogation {
   position: fixed;
-  top: 0px;
+  bottom: 0px;
   right: 0px;
   z-index: 2;
   margin-right: 0;
-  transition: transform 3s, top 3s, right 3s;
+  transition: transform 3s, bottom 3s, right 3s;
 }
 
 .interrogation:hover {
   transform: scale(1.5);
-  top: 50px;
+  bottom: 50px;
   right: 75px;
 }
 
