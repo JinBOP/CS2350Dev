@@ -14,4 +14,35 @@ Yellow #EED369
 Darker Yellow #CDB041
 Darkest Yellow AA8E21
 */
+@font-face {
+    font-family:lora;
+    src:url(lora.ttf);
+}
 
+
+body {
+    background-image:url(stardust.png);
+    background-color:#021E2D;
+    color:#EED369;
+    margin: 0;
+    padding: 24px, 48px;
+}
+
+a, a:link, a:visited {
+    color:#FFF2BF;
+    text-decoration:underline;
+}
+
+a:hover {
+    color:#CDB041;
+    text-decoration:none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    size:default;
+    color:#CDB041;
+}
+
+h1 {
+    text-align: center;
+}
