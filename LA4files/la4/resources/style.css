@@ -42,6 +42,31 @@ header h1 {
   padding-top: 80px;
 }
 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  padding-right: 24px;
+  margin: 0;
+  float: right;
+}
+
+nav li {
+  display: inline-block; /*turns each list item into a block*/
+  width: 120px;
+  height: 40px;
+  line-height: 40px; /*moves content to the middle when set as the same as the height*/
+}
+
+nav a, nav a:link, nav a:visited {
+  display: block;
+  padding-left: 12px;
+  color: #DCEBE6; 
+}
+
+nav a:hover {
+  color: #20516b;
+}
+
 a, a:link, a:visited {
   color: #20516B;
   font-weight: bold;
@@ -56,7 +81,7 @@ a:hover {
 a:active {
   color: #20516B;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: none; /*removes underline*/
   transition: 1s background-color;
 }
 
