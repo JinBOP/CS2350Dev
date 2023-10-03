@@ -1,0 +1,92 @@
+/* color scheme
+Light Green Grey
+  Lightest: #FFF
+  Lighter: #F7FAF9
+  Light Green Grey: #DCEBE6
+  Darker: #B2D2C8
+  Darkest: #7DB09F
+
+Dark Blue
+  Lightest: #000 
+  Lighter: #20516B
+  Dark Blue: #0D3C55
+  Darker: #03283C
+  Darkest: #011723
+*/
+
+@font-face {
+  font-family: roboto;
+  src: url(roboto.ttf);
+}
+
+body {
+  font-family: roboto;
+  color: #011723;
+  margin: 0;
+  padding: 0 4%;
+}
+
+header {
+  background-color: #20516B;
+  height: 200px;
+}
+
+header img {
+  float: left;
+  padding-left: 24px;
+}
+
+header h1 {
+  color: #DCEBE6; 
+  padding-top: 80px; 
+  padding-left: 320px;  
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  padding-right: 24px;
+}
+
+nav li {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width: 120px;
+}
+
+nav a, nav a:link, nav a:visited {
+  display: block;
+  padding-left: 20px;
+  color: #DCEBE6;
+}
+
+nav a:hover {
+  color: #20516B;
+}
+
+a, a:link, a:visited {
+  color: #20516B;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 1s background-color;
+}
+
+a:hover {
+  background-color: #DCEBE6;
+}
+
+a:active {
+  color: #20516B;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 1s background-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0D3C55;
+}
+
+
