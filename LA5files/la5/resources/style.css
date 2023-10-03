@@ -89,4 +89,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #0D3C55;
 }
 
+main section {
+  border-left:3px solid #20516B;
+  border-bottom:3px solid #20516B;
+  padding:12px;
+  margin:8px;
+  box-shadow:-4px 4px 8px #20516B;
+  border-radius:14px;
+}
 
+main section img {
+  float:right;
+  margin-left:8px;
+}
