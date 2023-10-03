@@ -88,6 +88,20 @@ main section p {
   clear:both;
 }
 
+aside h2 {
+  text-align:center;
+}
+
+aside h3 {
+  padding:12px;
+}
+
+aside hr {
+  width:80%;
+  border:3px outset #EED369;
+  border-radius:3px;
+}
+
 a:link, a:visited {
   color: #FFF2BF;
   text-decoration: none;
