@@ -14,7 +14,33 @@ Yellow #EED369
 Darker Yellow #CDB041
 Darkest Yellow AA8E21
 */
+* {
+  box-sizing:border-box;
+}
 
+.col-1 {width:8.33%}
+.col-2 {width:16.66%}
+.col-3 {width:25%}
+.col-4 {width:33.33%}
+.col-5 {width:41.66%}
+.col-6 {width:50%}
+.col-7 {width:58.33%}
+.col-8 {width:66.66%}
+.col-9 {width:75%}
+.col-10 {width:83.33%}
+.col-11 {width:91.66%}
+.col-12 {width:100%}
+
+[class*="col-"] {
+  float:left;
+  padding:15px;
+}
+
+.row::after {
+  content:"";
+  clear:both;
+  display:table;
+}
 
 @font-face {
   font-family: lora;
@@ -48,7 +74,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-  box-sizing: border-box;
   height: 180px;
   background: url(science.png) repeat-x center;
   padding-top: 60px;
@@ -80,8 +105,8 @@ nav a:link, nav a:visited {
   font-size: 16px;
   font-weight: bold;
   display: block;
-  height: 46px;
-  line-height: 46px;
+  height: 50px;
+  line-height: 50px;
   width: 160px;
   border: 2px #021E2D solid;
   text-align: center;
