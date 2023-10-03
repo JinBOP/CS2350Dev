@@ -55,6 +55,39 @@ body {
   padding: 24px 48px;
 }
 
+main section {
+  background-color:#021E2D;
+  border:1px solid #19475F;
+  box-shadow:4px 4px 12px #19475F,-4px -4px 12px #19475F;
+  border-radius:12px;
+  margin:48px 0px;
+  padding:12px;
+  transition: box-shadow 1s;
+}
+
+main section:hover {
+  box-shadow:8px 8px 24px #336078,-8px -8px 24px #336078;
+}
+
+main section a:link, main section a:visited, main section a:hover, main section a:active {
+  text-decoration:none;
+  color:#EED369;
+}
+
+main section h2 {
+  padding-top:24px;
+}
+
+main section img {
+  float:left;
+  margin-right:24px;
+  margin-bottom:18px;
+}
+
+main section p {
+  clear:both;
+}
+
 a:link, a:visited {
   color: #FFF2BF;
   text-decoration: none;
