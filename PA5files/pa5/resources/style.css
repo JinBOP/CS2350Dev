@@ -1,0 +1,100 @@
+/*
+color scheme:
+Dark blue:
+Lighest blue #336078
+Ligher blue #19475F
+Dark blue #083045
+Darker blue #021E2D
+Darkest blue #001018
+
+Yellow:
+Lightest Yellow #FFF2BF
+Lighter Yellow #FFEA96
+Yellow #EED369
+Darker Yellow #CDB041
+Darkest Yellow AA8E21
+*/
+
+
+@font-face {
+  font-family: lora;
+  src: url(lora.ttf);
+}
+
+body {
+  background: #021E2D url(stardust.png);
+  font-family: lora;
+  color: #EED369;
+  margin: 0;
+  padding: 24px 48px;
+}
+
+a:link, a:visited {
+  color: #FFF2BF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #CDB041;
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #CDB041;
+}
+
+header {
+  box-sizing: border-box;
+  height: 180px;
+  background: url(science.png) repeat-x center;
+  padding-top: 60px;
+  margin-left: -48px;
+  margin-right: -48px;
+  margin-bottom: 24px;
+}
+
+header p {
+  height: 82px;
+  width: 420px;
+  background-color: #021E2D;
+  color: #FFF2BF;
+  font-size: 46px;
+  line-height: 82px;
+  text-align: center;
+  margin: auto;
+  border-radius: 86px;
+  font-weight: bold;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav a:link, nav a:visited {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  height: 46px;
+  line-height: 46px;
+  width: 160px;
+  border: 2px #021E2D solid;
+  text-align: center;
+  color: #021E2D;
+  text-decoration: none;
+  border-radius: 24px;
+  background-color: #FFF2BF;
+}
+
+nav a:hover {
+  background-color: #FFEA96;
+  color: #001018;
+}
+
+
+
