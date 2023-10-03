@@ -102,3 +102,13 @@ main section img {
   float:right;
   margin-left:8px;
 }
+
+aside {
+  background-color:#20516B;
+  text-align:center;
+  padding:8px;
+}
+
+aside h3 {
+  color:#DCEBE6;
+}
