@@ -83,67 +83,99 @@ nav a:hover {
   background-color:#DCEBE6;
 }
 
+@media only screen and (min-width:768px) { /*When the screen is 768px wide or more*/
+  /*Grid System*/
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+  
+  header h1 span {
+    display:inline;
+  }
+
+
+  nav ul {
+    background-color:#20516B;
+    text-align:center;
+  }
+
+  nav li {
+    display: inline-block;
+    width: 132px;
+  }
+
+  nav a, nav a:link, nav a:visited {
+    margin:0 -2px;
+    border:none;
+  }
+
+}
+
+
 @media only screen and (min-width:992px) { /*When the screen is 992px wide or more*/
 
-/* Grid System*/
+  /*Grid System*/
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+  /*for desktop \*/
+  header {
+    height: 200px;
+  }
 
-}
-/* for desktop
-header {
-  background-color: #20516B;
-  height: 200px;
-}
+  header img {
+    padding-left: 24px;
+    height: 200px;
+  }
 
-header img {
-  float: left;
-  padding-left: 24px;
-  height: 200px;
-}
+  header h1 {
+    color: #DCEBE6; 
+    padding-top: 60px; 
+    padding-left: 280px;  
+  }
 
-header h1 {
-  color: #DCEBE6; 
-  padding-top: 60px; 
-  padding-left: 280px;  
-}
+  header h1 span {
+    display:inline;
+  }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  float: right;
-  padding-right: 24px;
-}
+  nav {
+    margin-top:-60px;
+    padding-bottom:60px;
+  }
 
-nav li {
-  display: inline-block;
-  height: 40px;
-  line-height: 40px;
-  width: 132px;
-}
+  nav ul {
+    float: right;
+    padding-right: 24px;
+  }
 
-nav a, nav a:link, nav a:visited {
-  display: block;
-  padding-left: 12px;
-  color: #DCEBE6;
-}
+  nav li {
+    display: inline-block;
+    width: 132px;
+  }
 
-nav a:hover {
-  color: #20516B;
+  nav a, nav a:link, nav a:visited {
+    margin:0 -2px;
+  }
 }
-*/
 
 a, a:link, a:visited {
   color: #20516B;
