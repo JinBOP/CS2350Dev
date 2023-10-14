@@ -23,13 +23,85 @@ Dark Blue
   src: url(roboto.ttf);
 }
 
+[class*="col-"] {
+  width:100%;
+}
+
 body {
   font-family: roboto;
   color: #011723;
   margin: 0;
   padding: 0 4%;
 }
+header {
+  background-color: #20516B;
+  height: 160px;
+}
 
+header img {
+  float: left;
+  padding-left: 8px;
+  height: 160px;
+  width:auto;
+}
+
+header h1 {
+  color: #DCEBE6; 
+  padding-top: 40px; 
+  padding-left: 200px;  
+}
+
+header h1 span {
+  display:none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width:100%;
+}
+
+nav a, nav a:link, nav a:visited {
+  display: block;
+  padding-left: 12px;
+  color: #DCEBE6;
+  background-color:#20516B;
+  text-align:center;
+  border-top:2px #DCEBE6 solid;
+  border-bottom:2px #DCEBE6 solid;
+}
+
+nav a:hover {
+  color: #20516B;
+  background-color:#DCEBE6;
+}
+
+@media only screen and (min-width:992px) { /*When the screen is 992px wide or more*/
+
+/* Grid System*/
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+}
+/* for desktop
 header {
   background-color: #20516B;
   height: 200px;
@@ -71,6 +143,7 @@ nav a, nav a:link, nav a:visited {
 nav a:hover {
   color: #20516B;
 }
+*/
 
 a, a:link, a:visited {
   color: #20516B;
@@ -143,21 +216,6 @@ footer {
   padding-bottom: 12px;
   text-align: center;
 }
-
-/* Grid System */
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 
 [class*="col-"] {
     float: left;
