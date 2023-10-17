@@ -29,7 +29,7 @@ body {
   font-family: lora;
   color: #EED369;
   margin: 0;
-  padding: 24px 48px;
+  padding: 12px 24px;
 }
 
 a:link, a:visited {
@@ -54,8 +54,8 @@ header {
   height: 180px;
   background: url(science.png) repeat-x center;
   padding-top: 60px;
-  margin-left: -48px;
-  margin-right: -48px;
+  margin-left: -24px;
+  margin-right: -24px;
   margin-bottom: 24px;
 }
 
@@ -90,7 +90,7 @@ nav a:link, nav a:visited {
   text-decoration: none;
   border-radius: 24px;
   background-color: #FFF2BF;
-  width: 160px;
+  width: 100%;
 }
 
 nav a:hover {
@@ -138,7 +138,9 @@ aside h2 {
 }
 
 aside h3 {
-  padding: 12px;
+  padding-top:12px;
+  padding-bottom:12px;
+  text-align:center;
 }
 
 aside hr {
@@ -147,16 +149,21 @@ aside hr {
   border-radius: 3px;
 }
 
+spacer {
+  display:none;
+}
+
 footer p {
   font-size: 1.2em;
+  text-align:center;
 }
 
 footer img {
-  margin: 24px;
+  margin: 8px;
 }
 
 /* Grid System */
-
+/*
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -169,10 +176,11 @@ footer img {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-
+*/
 [class*="col-"] {
     float: left;
     padding: 15px;
+    width:100%;
 }
 
 .row::after {
