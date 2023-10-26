@@ -78,7 +78,7 @@ nav ul {
   list-style-type: none;
 }
 
-nav a:link, nav a:visited {
+nav a:link, nav a:visited, nav button {
   font-size: 16px;
   font-weight: bold;
   display: block;
@@ -93,7 +93,19 @@ nav a:link, nav a:visited {
   width: 100%;
 }
 
-nav a:hover {
+nav button {
+  font-family: lora;
+}
+
+nav .flyout-content {
+  display:none;
+}
+
+nav .flyout:hover .flyout-content {
+  display:block;
+}
+
+nav a:hover, nav button:hover{
   background-color: #FFEA96;
   color: #001018;
 }
@@ -171,6 +183,34 @@ footer img {
 
 @media only screen and (min-width: 768px) {
 
+nav .flyout {
+  position:relative;
+}
+
+nav a:link, nav a:visited, nav button {
+  width:220px;
+}
+
+nav .flyout-content {
+  display:none;
+  position:absolute;
+  left:220px;
+  top:0px;
+}
+
+nav .flyout:hover button {
+  /*sharpens the edges to make more flush and appear connected*/
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+}
+
+nav .flyout-content a {
+  /*sharpens the edges to make more flush and appear connected*/
+  border-top-left-radius:0;
+  border-bottom-left-radius:0;
+}
+
+
 footer img {
   margin: 12px;
 }
@@ -218,6 +258,14 @@ aside h3 {
 
 div.spacer {
   display: block;
+}
+
+nav .flyout-content {
+  left:256px;
+}
+
+nav a:link, nav a:visited, nav button {
+  width:256px;
 }
 
 footer p {
