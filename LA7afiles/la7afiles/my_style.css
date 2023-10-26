@@ -100,7 +100,7 @@ nav li:first-child a {
 }
 
 
-@media screen and (min-width: 768px) { /*Adjustments for Desktop Layout*/
+@media screen and (min-width: 820px) { /*Adjustments for Desktop Layout*/
 
   nav li {
     display: inline-block;
