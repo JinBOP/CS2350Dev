@@ -58,7 +58,7 @@ nav ul {
   list-style: none;
 }
 
-nav a {
+nav a, nav button {
   border: solid 2px #5E589D;
   display: block;
   padding: 8px 12px;
@@ -69,10 +69,25 @@ nav a {
   font-weight: bold; 
   font-size: 18px; 
   border-radius: 0 12px 0 0;
+  width: 100%;
 }
 
-nav a:hover {
+nav a:hover, nav button:hover {
   background-color: #B2AFD7;
+}
+
+nav .dropdown {
+  position:relative;
+}
+
+nav .dropdown-content {
+  position:absolute;
+  display:none;
+  width:100%;
+}
+
+nav .dropdown:hover .dropdown-content { /*only displays dropdown menu when button is hovered over*/
+  display:block;
 }
 
 nav a.current {
@@ -85,16 +100,20 @@ nav li:first-child a {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) { /*Adjustments for Desktop Layout*/
 
   nav li {
     display: inline-block;
     margin-right: -6px;
   }
 
-  nav a {
+  nav a, nav button {
     display: block;
     width: 200px;
+  }
+
+  nav .dropdown-content {
+    width:200px;
   }
 }
 
@@ -163,7 +182,3 @@ td img {
 img {
 	margin-bottom: 20px;
 }
-
-
-
-
