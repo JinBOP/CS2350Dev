@@ -11,7 +11,7 @@ content="Learning a variey of things you can do with JavaScript">
 content="JavaScript, functions, buttons, variables, operators">
 <meta name="author" content= "Linda DuHadway">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<script src="jsfunctions.js"></script>
 <link rel="stylesheet" href="jsstyle.css">
 </head>
 
@@ -24,17 +24,29 @@ content="JavaScript, functions, buttons, variables, operators">
 <h2>Build a Menu</h2>
 
 <div class="row">
+
 <div class="input col-8">
-
-
+<p>
+    <label for="maindish">Enter a main dish</label>
+    <input type="text" id="maindish">
+</p>
+<p>
+    <label for="sidedishone">Enter a side dish</label>
+    <input type="text" id="sidedishone">
+</p>
+<p>
+    <label for="sidedishtwo">Enter a side dish</label>
+    <input type="text" id="sidedishtwo">
+</p>
 </div>
+
 <div class="button col-4">
-
+<button onclick="constructmenu()">Print Menu</button>
 
 </div>
 </div>
 
-<h3>Menu</h3>
+<h3 id="menu">Menu</h3>
 </section>
 
 
