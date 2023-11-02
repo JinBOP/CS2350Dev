@@ -19,28 +19,48 @@ content="JavaScript, functions, buttons, variables, operators">
 
 <h1>Using buttons, functions, and the onclick Event</h1>
 
-<h2>Hello</h2>
-  
+<h2 id="hello">Hello</h2>
+
 <section>
 <h2>Pet Greeting</h2>
-  
+<label for="petinput">Enter your pet name:</label> <!--<label> is used to add instructions and the like for the <input> and 'for' attaches the <label> to the <input>-->
+<input type="text" id="petinput"> <!--allows for user input within the page, 'type="text"' makes it a textbox-->
+<p id="petmessage"></p>
+<button id="petbutton" onclick="PrintPetMessage()">Submit</button> <!--<button> tag adds a clickable button to the page, 'onclick' defines what happens when button is clicked-->
 </section>
 
 <section>
 <h2>Compute Area</h2>
-  
+<p>
+    <label for="height">Enter Height: </label>
+    <input type="text" id="height">
+</p>
+<p>
+    <label for="width">Enter Width: </label>
+    <input type="text" id="width">
+</p>
+<p id="area"></p>
+<button id="computeareabutton" onclick="ComputeArea()">Compute Area</button>
 </section>
 
 <section>
 <h2>Compute Sum</h2>
-  
+<p>
+    <label for="first">Enter first value: </label>
+    <input type="text" id="first">
+</p>
+<p>
+    <label for="second">Enter second value: </label>
+    <input type="text" id="second">
+</p>
+<h3 id="sum"></h3>
+<button id="computesumbutton" onclick="ComputeSum()">Compute Sum</button>
 </section>
 
 <section>
 <h2>Convert Temperature</h2>
   
 </section>
-
+<script src="functions.js"></script>    <!--script tag location can make a big difference-->
 </body>
 </html>
-
