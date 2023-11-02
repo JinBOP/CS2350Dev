@@ -8,7 +8,8 @@ function PrintPetMessage () {   // creates the function names PrintPetMessage
     var petname;
     petname = document.getElementById("petinput").value;
     console.log(petname);
-    document.getElementById("petmessage").innerHTML = petname + " is a great pet!";
+    document.getElementById("petmessage").innerHTML = 
+    petname + " is a great pet!";
 }
 
 function ComputeArea() {
@@ -24,5 +25,14 @@ function ComputeSum() {
     value1 = document.getElementById("first").value;
     value2 = document.getElementById("second").value;
     sum = parseFloat(value1) + parseFloat(value2);  // parseFloat() converts variable to a Float
-    document.getElementById("sum").innerHTML = "Sum of " + value1 + " and " + value2 + " = " + sum;
+    document.getElementById("sum").innerHTML = 
+    "Sum of " + value1 + " and " + value2 + " = " + sum;
+}
+
+function ConvertTemp() {
+    var fah, cel;
+    fah = document.getElementById("fah").value;
+    cel = (parseFloat(fah) - 32) * 5 / 9;
+    document.getElementById("cel").innerHTML = 
+    fah + " degrees F is " + cel.toFixed(2) + " degrees C"; // .toFixed() limits the number of digits that appear after the decimal
 }
