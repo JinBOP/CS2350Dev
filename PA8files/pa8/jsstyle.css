@@ -59,4 +59,22 @@ div.short {
   margin-top: 14px;
 }
 
+label {
+  display:inline-block;
+  width:292px;
+  margin-right:8px;
+  font-size:18px;
+  text-align:right;
+}
 
+input[type="text"] {
+  background-color:#C3D2D9;
+  border:double 3px #2F5E74;
+  height:28px;
+  padding:1px 4px;
+}
+
+button {
+  border-color:#2F5E74;
+  font-size:18px;
+}
