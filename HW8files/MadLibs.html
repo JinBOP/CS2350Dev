@@ -10,7 +10,6 @@
 <meta name="keywords" content=" ">
 <meta name="author" content= "H Starks">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="icon" type="image/png" href="resources/favicon-32x32.png">
 </head>
@@ -28,6 +27,9 @@
             title="Go to Main Portfolio Page">Main Portfolio Page</a></li>
         <li><a href="https://icarus.cs.weber.edu/~hs61996/HW1files/hw1.html"
             title="Go to page about the heavy weapons guy">About The Heavy</a></li>
+        <li><a href="https://icarus.cs.weber.edu/~hs61996/HW1files/MadLibs.html"
+            title="Go to page about where you can create your own story">
+            Create A Story</a></li>
         <li>
             <div class="dropdown">
                 <button>Tutorials &#x25BC;</button>
@@ -45,12 +47,13 @@
 </nav>
 </div>
 
-<main class="col-12 col-m-8">
-<section>
+<main class="col-12 col-m-12">
+<section class="madlibs">
     <h2>Build a story</h2>
-        
+    
     <div class="row">
-    <div class="input col-8">
+    <div class="col-6">
+    <script src="functions.js"></script>
     <p>
         <label for="name">Enter a name</label>
         <input type="text" id="name">
@@ -99,6 +102,9 @@
         <label for="placetwo">Enter a place</label>
         <input type="text" id="placetwo">
     </p>
+    </div>
+
+    <div class="input col-6">
     <p>
         <label for="emotiontwo">Enter an emotion</label>
         <input type="text" id="emotiontwo">
@@ -151,16 +157,18 @@
         <label for="verbtwo">Enter a past tense verb</label>
         <input type="text" id="verbtwo">
     </p>
+    </div>
+
     <button onclick="constructstory()">Reveal Story</button>
     </div>
-    </div>
-    <h3 id="story">Story</h3>
+
+    <h3 id="story" class="col-6 col-m-12">[Story]</h3>
+    <img class="col-3 col-m-6" src="resources/traveltheglobe.png" 
+    alt="Image of a cartoon globe" width="268px" height="250px">
+    <img class="col-3 col-m-6" src="resources/packedforvacation.png" 
+    alt="Image of a cartoon luggage" width="280px" height="250">
 </section>
 </main>
-
-<aside class="col-12 col-m-4">
-
-</aside>
 
 <footer class="col-12 col-m-8">
 Site made entirely by: H. 'Jin' Starks

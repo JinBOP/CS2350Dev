@@ -265,6 +265,25 @@ input[type="text"] {
 button {
     border-color:#375a6a;
     font-size:18px;
+    align-self:center;
+}
+
+.madlibs h3 {
+    background-color:#bd9357;
+}
+
+.madlibs img {
+    box-shadow:none;
+}
+
+.madlibs img:hover {
+    box-shadow:none;
+}
+
+span {
+    font-weight:bold;
+    color:#faebd7;
+    background-color:#000080;
 }
 
 @media only screen and (min-width:812px) {
@@ -284,6 +303,10 @@ button {
 
     nav ul {
         float:center;
+    }
+
+    .story {
+        align-self:center;
     }
 
     aside {
@@ -315,6 +338,10 @@ button {
         height:20px;
         line-height:40px;
         margin-left:120px;
+    }
+
+    .madlibs img {
+        margin-top:20px;
     }
 
     main section img {

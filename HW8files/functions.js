@@ -8,7 +8,7 @@ function constructstory() {
     noun1 = document.getElementById("nounone").value;
     adjective1 = document.getElementById("adjectiveone").value;
     season = document.getElementById("season").value;
-    emotion1 = document.getElementById("emotinoone").value;
+    emotion1 = document.getElementById("emotionone").value;
     adjective2 = document.getElementById("adjectivetwo").value;
     transportation = document.getElementById("transportation").value;
     time = document.getElementById("time").value;
