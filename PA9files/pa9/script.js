@@ -7,8 +7,10 @@ var timer;
 function AddListeners() {
     document.getElementById("next").addEventListener("click", ChangeImage);
     document.getElementById("play").addEventListener("click", function(){ 
+        clearInterval(timer);
         timer = setInterval("ChangeImage()",1000);
     });
+    document.getElementById("pause").addEventListener("click", PauseSlideShow);
 }
 
 function ChangeImage() {
@@ -18,4 +20,8 @@ function ChangeImage() {
     }
     document.getElementById("picture").src = images[index];
     document.getElementById("caption").innerHTML=captions[index];
+}
+
+function PauseSlideShow() {
+    clearInterval(timer);
 }
