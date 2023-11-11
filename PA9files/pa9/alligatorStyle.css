@@ -1,0 +1,11 @@
+body {
+  background-color:#9CBE9D;
+}
+img {
+  height: 300px;
+}
+section.mainContent {
+  width: 600px;
+  text-align:center;
+  margin:auto;
+}
