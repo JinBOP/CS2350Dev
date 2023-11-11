@@ -5,6 +5,14 @@ var index = 0;
 var timer;
 
 function AddListeners() {
+    document.getElementById("previous").addEventListener("click", function(){
+        index--;
+        if (index < 0) {
+        index = 5
+        }
+        document.getElementById("picture").src = images[index];
+        document.getElementById("caption").innerHTML=captions[index];
+    });
     document.getElementById("next").addEventListener("click", ChangeImage);
     document.getElementById("play").addEventListener("click", function(){ 
         clearInterval(timer);
