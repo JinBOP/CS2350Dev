@@ -1,3 +1,41 @@
+window.addEventListener("load", AddListeners);
+var images = new Array("comicscottpilgrim.jpg", "comicramonaflowers.jpg", 
+"comickniveschau.jpg", "comickimpine.jpg", "comicstevenstills.jpg", "comicwallacewells.jpg");
+var captions = new Array("Scott Pilgrim", "Ramona Flowers", "Knives Chau", 
+"Kim Pine", "Steven Stills", "Wallace Wells");
+var index = 0;
+var timer;
+
+function AddListeners() {
+    document.getElementById("previous").addEventListener("click", function(){
+        index--;
+        if (index < 0) {
+        index = 5
+        }
+        document.getElementById("picture").src = images[index];
+        document.getElementById("caption").innerHTML=captions[index];
+    });
+    document.getElementById("next").addEventListener("click", ChangeImage);
+    document.getElementById("play").addEventListener("click", function(){ 
+        clearInterval(timer);
+        timer = setInterval("ChangeImage()",1000);
+    });
+    document.getElementById("pause").addEventListener("click", PauseSlideShow);
+}
+
+function ChangeImage() {
+    index++;
+    if (index > images.length - 1) {
+        index = 0
+    }
+    document.getElementById("picture").src = images[index];
+    document.getElementById("caption").innerHTML=captions[index];
+}
+
+function PauseSlideShow() {
+    clearInterval(timer);
+}
+
 function constructstory() {
     var name, place1, activity1, noun1, adjective1, season, emotion1, adjective2,
         transportation, time, sense1, place2, emotion2, things1, things2, things3,
