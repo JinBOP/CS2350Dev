@@ -1,8 +1,10 @@
 window.addEventListener("load", AddListeners);
-var images = new Array("comicscottpilgrim.jpg", "comicramonaflowers.jpg", 
-"comickniveschau.jpg", "comickimpine.jpg", "comicstevenstills.jpg", "comicwallacewells.jpg");
+var images = new Array("resources/comicscottpilgrim.jpg", 
+"resources/comicramonaflowers.jpg", "resources/comickniveschau.jpg", 
+"resources/comickimpine.jpg", "resources/comicstephenstills.jpg", 
+"resources/comicwallacewells.jpg");
 var captions = new Array("Scott Pilgrim", "Ramona Flowers", "Knives Chau", 
-"Kim Pine", "Steven Stills", "Wallace Wells");
+"Kim Pine", "Stephen Stills", "Wallace Wells");
 var index = 0;
 var timer;
 
