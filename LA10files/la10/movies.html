@@ -42,25 +42,70 @@
 
 <main>
 <h2>Order Your Movie Experience Here</h2>
-
+<form method="post" action="https://icarus.cs.weber.edu/~linda/cs2350/submit.php"><!--'form' tag takes info from inside it and allows it to be sent to a server, 'method' says what to do with the form, 'action' says where the form is sent-->
 
 <h3>Choose Movie Details</h3>
 <div class="movie choose">
-
+<label for="movie">Select A Movie</label>
+<select name="movie" id="movie">
+  <option value="0">Inception</option>
+  <option value="1">The 5th Element</option>
+  <option value="2">Serenity</option>
+  <option value="3">I Robot</option>
+  <option value="4">Fight Club</option>
+  <option value="5">The Matrix</option>
+</select>
+<p>
+  <label for="date">Enter Date</label>
+  <input type="date" name="date" id="date">
+</p>
+<p>
+  <label for="time">Select Time</label>
+  <select name="time" id="time">
+    <option>11:00</option>
+    <option>1:30</option>
+    <option>4:00</option>
+    <option>6:30</option>
+    <option>9:00</option>
+  </select>
+</p>
 </div>
 
 <h3>Choose Seating Area</h3>
 <div class="choose">
-
+<p>
+  <input type="radio" name="seating" id="seating1" value="0">
+  <label for="seating1">Up-Close</label>
+</p>
+<p>
+  <input type="radio" name="seating" id="seating2" value="1">
+  <label for="seating2">Middle-Front</label>
+</p>
+<p>
+  <input type="radio" name="seating" id="seating3" value="2">
+  <label for="seating3">Middle-Back</label>
+</p>
+<p>
+  <input type="radio" name="seating" id="seating4" value="3">
+  <label for="seating4">Far-Back</label>
+</p>
 </div>
 
 
 <h3>Choose Type of Experience</h3>
 <div class="choose">
-
+<p>
+  <input type="radio" name="package" id="ticket" value="ticket">
+  <label for="ticket">Movie Tickets</label>
+</p>
+<p>
+  <input type="radio" name="package" id="complete" value="complete">
+  <label for="complete">Complete Cinema Experience</label>
+</p>
 </div>
 
-
+<fieldset id="movie_only"><!--'fieldset' tag brings attention to the section-->
+<legend>Enter Quantities</legend><!--'legend' tag adds a label to the fieldset-->
   <p class="heading">
     <span class="first">Product</span>
     <span class="second">Price</span>
@@ -71,9 +116,9 @@
     <label for="movie_adult_qty">Adult Movie Ticket</label>
     <span>$9.99</span>
     <input type="text" id="movie_adult_qty" class="quantity" 
-      name="movie_adult_qty" value="0">
+      name="movie_adult_qty" value="0"> <!--'name' attribute stores the given input as a variable of the given name-->
     <input type="text" id="movie_adult_total" class="cost" 
-      name="movie_adult_total" value="0.00">
+      name="movie_adult_total" value="0.00" readonly> <!--'readonly' attribute prevents user from changing the value-->
   </p>
   <p>
     <label for="movie_child_qty">Child Movie Ticket</label>
@@ -81,10 +126,11 @@
     <input type="text" id="movie_child_qty" class="quantity" 
       name="movie_child_qty" value="0">
     <input type="text" id="movie_child_total" class="cost" 
-      name="movie_child_total" value="0.00">
+      name="movie_child_total" value="0.00" readonly>
   </p>
-
-
+</fieldset>
+<fieldset id="movie_plus">
+<legend>Enter Qunatities</legend>
   <p class="heading">
     <span class="first">Product</span>
     <span class="second">Price</span>
@@ -97,7 +143,7 @@
     <input type="text" id="adult_qty" class="quantity" 
       name="adult_qty" value="0">
     <input type="text" id="adult_total" class="cost" 
-      name="adult_total" value="0.00">
+      name="adult_total" value="0.00" readonly>
   </p>
   <p>
     <label for="child_qty">Child Movie Ticket</label>
@@ -105,7 +151,7 @@
     <input type="text" id="child_qty" class="quantity" 
       name="child_qty" value="0">
     <input type="text" id="child_total" class="cost" 
-       name="child_total" value="0.00">
+       name="child_total" value="0.00" readonly>
   </p>
   <p>
     <label for="individual_qty">Individual Popcorn</label>
@@ -113,7 +159,7 @@
     <input type="text" id="individual_qty" class="quantity" 
       name="individual_qty" value="0">
     <input type="text" id="individual_total" class="cost" 
-      name="individual_total" value="0.00">
+      name="individual_total" value="0.00" readonly>
   </p>
   <p>
     <label for="share_qty">Popcorn to Share</label>
@@ -121,7 +167,7 @@
     <input type="text" id="share_qty" class="quantity" 
       name="share_qty" value="0">
     <input type="text" id="share_total" class="cost" 
-      name="share_total" value="0.00">
+      name="share_total" value="0.00" readonly>
   </p>
   <p>
     <label for="drink_qty">Large Drink</label>
@@ -129,24 +175,28 @@
     <input type="text" id="drink_qty" class="quantity" 
       name="drink_qty" value="0">
     <input type="text" id="drink_total" class="cost" 
-      name="drink_total" value="0.00">
+      name="drink_total" value="0.00" readonly>
   </p>
-
-
+</fieldset>
+<fieldset id="movie_total">
+<legend>Totals</legend>
 <h3>See the Total</h3>
 
   <p class="total">
     <label for="sales_tax">Sales Tax</label>
     <input type="text" id="sales_tax" class="cost" 
-      name="sales_tax" value="0.00">
+      name="sales_tax" value="0.00" readonly>
   </p>
   <p class="total">
     <label for="total">Total</label>
     <input type="text" id="total" class="cost" 
-      name="total" value="0.00">
+      name="total" value="0.00" readonly>
   </p>
-
-
+</fieldset>
+  <p>
+    <input type="submit" name="submit" value="Place Order"></input>
+  </p>
+</form>
 </main>
 
 <footer>
