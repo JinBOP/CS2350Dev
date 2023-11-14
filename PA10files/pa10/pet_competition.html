@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>Application Form</title>
+
+<meta name="description" content="Learning Form Elements" />
+<meta name="keywords"
+  content="form, select, input, text, radio, checkbox, password, textarea" />
+<meta name="author" content="Linda DuHadway" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/png" href="footprint.png">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+<h1 class="heading">National Pet Competition</h1>
+<h2 class="heading">Registration Form</h2>
+</header>
+
+<!-- Add form tag -->
+
+
+<section>
+<h2>Pet Competitor</h2>
+<p><label for="name">Enter Name of Pet</label>
+<input type="text" name="name" id="name"  /></p>
+
+<!-- Add a number input for age -->
+
+
+</section>
+
+<section class="checkbox" >
+<h2>Which Competitions?</h2>
+<p>Select the competitions you want to participate in. You may select any number.</p>
+<p>The registration fee is $120.00 per competition.</p>
+
+<!-- Add the first checkbox input -->
+
+<div id="singAdd">
+<!-- Add a fieldset and legend -->
+
+<p><label for="singTitle">Title</label>
+<input type="text" name="singTitle" id="singTitle"  /></p>
+
+<!-- Add a file input -->
+
+
+</div>
+
+
+<!-- Add the second checkbox input -->
+
+
+<div id="cuteAdd">
+<!-- Add a fieldset and legend -->
+
+<p><label for="cuteTitle">Title</label>
+<input type="text" name="cuteTitle" id="cuteTitle"  /></p>
+
+<!-- Add a file input -->
+
+
+</div>
+
+
+<!-- Add the third checkbox input -->
+
+<div id="trickAdd">
+
+<!-- Add a fieldset and legend -->
+
+<p><label for="trickTitle">Title</label>
+<input type="text" name="trickTitle" id="trickTitle"  /></p>
+
+<!-- Add a select element with options -->
+
+
+</div>
+
+</section>
+
+
+<section>
+<h2>Pet Type?</h2>
+
+<!-- Add five radio buttons -->
+
+</section>
+
+<section>
+<h2>Contact Info</h2>
+<p>Enter the email of the person to contact.</p>
+
+<!-- Add an email input -->
+
+</section>
+
+<section>
+<h2>Boarding Arrangements</h2>
+<p>Provide the following information so boarding arrangements can be made.
+The cost for boarding is 19.99 per day. The size of kennel will be computed
+based on weight of pet.</p>
+
+<p><label for="weight">Weight of pet?</label>
+<input type="text" name="weight" id="weight" class="quantity" />
+<label for="size">Kennel size</label>
+<input type="text" name="size" id="size" class="cost" readonly></p>
+<p><label for="days">Days of boarding?</label>
+<input type="text" name="days" id="days" class="quantity" />
+<label for="cost">Cost</label>
+<input type="text" name="cost" id="cost" class="cost" readonly/></p>
+</section>
+
+<section class="total">
+<h2>Total Costs</h2>
+<p><label for="boardingCost">Boarding</label>
+<input type="text" name="boardingCost" id="boardingCost" readonly /></p>
+<p><label for="registrationCost">Registration</label>
+<input type="text" name="registrationCost" id="registrationCost" readonly /></p>
+<p><label for="totalCost">Total</label>
+<input type="text" name="totalCost" id="totalCost" readonly /></p>
+</section>
+
+<section>
+<h2>Submit the Registration</h2>
+
+<!-- add a submit input  -->
+
+</section>
+
+<!-- close the form -->
+
+</body>
+</html>
