@@ -1,6 +1,39 @@
 window.addEventListener("load", addListeners)
 
 function addListeners() {
+    document.getElementById("sing").addEventListener("change", function(){
+        if(document.getElementById("sing").checked){
+            document.getElementById("singAdd").style.display = "block";
+        }
+        else{
+            document.getElementById("singAdd").style.display = "none";
+        }
+
+        ComputeTotal();
+    })
+    
+    document.getElementById("cute").addEventListener("change", function(){
+        if(document.getElementById("cute").checked){
+            document.getElementById("cuteAdd").style.display = "block";
+        }
+        else{
+            document.getElementById("cuteAdd").style.display = "none";
+        }
+
+        ComputeTotal();
+    })
+
+    document.getElementById("trick").addEventListener("change", function(){
+        if(document.getElementById("trick").checked){
+            document.getElementById("trickAdd").style.display = "block";
+        }
+        else{
+            document.getElementById("trickAdd").style.display = "none";
+        }
+
+        ComputeTotal();
+    })
+
     document.getElementById("weight").addEventListener("change", function(){
         var weight = document.getElementById("weight").value;
         weight = parseFloat(weight);
