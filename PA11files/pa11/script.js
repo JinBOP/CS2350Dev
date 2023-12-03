@@ -40,5 +40,39 @@ function addListeners() {
 
         document.getElementById("days").value = days;
         document.getElementById("boardingFee").value = fee.toFixed(2);
+
+        ComputeTotal();
     })
 }
+
+function ComputeTotal(){
+    var registration = 0;
+    var events = 0;
+    var boarding = document.getElementById("boardingFee").value;
+
+    if (boarding == ""){
+        boarding = 0;
+    }
+    else {
+        boarding = parseFloat(boarding);
+    }
+
+    if(document.getElementById("sing").checked){
+        events++;
+    }
+
+    if(document.getElementById("cute").checked){
+        events++;
+    }
+
+    if(document.getElementById("trick").checked){
+        events++;
+    }
+
+    registration = 120 * events;
+    var total = boarding + registration;
+
+    document.getElementById("boardingCost").value = boarding.toFixed(2);
+    document.getElementById("registrationCost").value = registration.toFixed(2);
+    document.getElementById("totalCost").value = total.toFixed(2);
+  }
