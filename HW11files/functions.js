@@ -27,7 +27,7 @@ function AddListeners() {
 
     // document.getElementById("pause").addEventListener("click", PauseSlideShow);
 
-    document.getElementById("find").addEventListener("change", function(){ // event listener for checking what the user chooses to calculate for
+    document.getElementById("find").addEventListener("change", function(){ // event listener to update according to what is being calculated for
         if(document.getElementById("give_width").checked){
             document.getElementById("pixels").style.display = "none";
             document.getElementById("screen_width_input").style.display = "none";
@@ -60,7 +60,7 @@ function AddListeners() {
         }
     });
 
-    document.getElementById("aspect_ratio").addEventListener("change", function(){
+    document.getElementById("aspect_ratio").addEventListener("change", function(){  // event listener for updated according to chosen aspect ratio
         if(document.getElementById("give_width").checked){
             document.getElementById("pixels").style.display = "block";
             document.getElementById("screen_width_input").style.display = "block";
@@ -69,6 +69,7 @@ function AddListeners() {
             document.getElementById("given_width").value = 0;
             document.getElementById("given_height").value = 0;
             document.getElementById("exact_ratio_width").value = 0;
+            document.getElementById("text_labels").innerHTML = "Width X Height";
         }
         else if(document.getElementById("give_height").checked){
             document.getElementById("pixels").style.display = "block";
@@ -78,21 +79,123 @@ function AddListeners() {
             document.getElementById("given_width").value = 0;
             document.getElementById("given_height").value = 0;
             document.getElementById("exact_ratio_width").value = 0;
+            document.getElementById("text_labels").innerHTML = "Height X Width";
         }
-        });
-}
+    });
 
-function ChangeImage() {
-    index++;
-    if (index > images.length - 1) {
-        index = 0
-    }
-    document.getElementById("picture").src = images[index];
-    document.getElementById("caption").innerHTML=captions[index];
-}
+    document.getElementById("given_width").addEventListener("change", function(){   // calculates the height according to the given width and aspect ratio
+        if(document.getElementById("give_width").checked){
+            // if(isNaN(document.getElementById("given_width"))){
+            //     document.getElementById("given_width").value = 0;
+            // }
+            // else{
+                var screenwidth = document.getElementById("given_width").value;
+                screenwidth = parseInt(screenwidth);
+                var screenheight;
+                if(document.getElementById("onebyone").checked){
+                    screenheight = screenwidth;
+                    document.getElementById("calculated_height").value = screenheight;
+                }
+                else if(document.getElementById("fourbythree").checked){
+                    screenheight = Math.round(screenwidth / 1.33);
+                    document.getElementById("calculated_height").value = screenheight;
+                }
+                else if(document.getElementById("fourbythree").checked){
+                    screenheight = Math.round(screenwidth / 1.33);
+                    document.getElementById("calculated_height").value = screenheight;
+                }
+                else if(document.getElementById("fivebyfour").checked){
+                    screenheight = Math.round(screenwidth / 1.25);
+                    document.getElementById("calculated_height").value = screenheight;
+                }
+                else if(document.getElementById("threebytwo").checked){
+                    screenheight = Math.round(screenwidth / 1.5);
+                    document.getElementById("calculated_height").value = screenheight;
+                }
+                else if(document.getElementById("sixteenbyten").checked){
+                    screenheight = Math.round(screenwidth / 1.6);
+                    document.getElementById("calculated_height").value = screenheight;
+                }
+                else if(document.getElementById("sixteenbynine").checked){
+                    screenheight = Math.round(screenwidth / 1.78);
+                    document.getElementById("calculated_height").value = screenheight;
+                }
+                else if(document.getElementById("seventeenbynine").checked){
+                    screenheight = Math.round(screenwidth / 1.89);
+                    document.getElementById("calculated_height").value = screenheight;
+                }
+                else if(document.getElementById("twentyonebynine").checked){
+                    screenheight = Math.round(screenwidth / 2.37);
+                    document.getElementById("calculated_height").value = screenheight;
+                }
+                else if(document.getElementById("thirtytwobynine").checked){
+                    screenheight = Math.round(screenwidth / 3.56);
+                    document.getElementById("calculated_height").value = screenheight;
+                }
+                else if(document.getElementById("fourbyone").checked){
+                    screenheight = Math.round(screenwidth / 4);
+                    document.getElementById("calculated_height").value = screenheight;
+                }
+            // }
+        }
+    });
 
-function PauseSlideShow() {
-    clearInterval(timer);
+    document.getElementById("given_height").addEventListener("change", function(){   // calulates the width according to the given height and aspect ratio
+        if(document.getElementById("give_height").checked){
+            // if(isNaN(document.getElementById("given_height"))){
+            //     document.getElementById("given_height").value = 0;
+            // }
+            // else{
+                var screenheight = document.getElementById("given_height").value;
+                screenheight = parseInt(screenheight);
+                var screenwidth;
+                if(document.getElementById("onebyone").checked){
+                    screenwidth = screenheight;
+                    document.getElementById("calculated_width").value = screenwidth;
+                }
+                else if(document.getElementById("fourbythree").checked){
+                    screenwidth = Math.round(screenheight * 1.33);
+                    document.getElementById("calculated_width").value = screenwidth;
+                }
+                else if(document.getElementById("fourbythree").checked){
+                    screenwidth = Math.round(screenheight * 1.33);
+                    document.getElementById("calculated_width").value = screenwidth;
+                }
+                else if(document.getElementById("fivebyfour").checked){
+                    screenwidth = Math.round(screenheight * 1.25);
+                    document.getElementById("calculated_width").value = screenwidth;
+                }
+                else if(document.getElementById("threebytwo").checked){
+                    screenwidth = Math.round(screenheight * 1.5);
+                    document.getElementById("calculated_width").value = screenwidth;
+                }
+                else if(document.getElementById("sixteenbyten").checked){
+                    screenwidth = Math.round(screenheight * 1.6);
+                    document.getElementById("calculated_width").value = screenwidth;
+                }
+                else if(document.getElementById("sixteenbynine").checked){
+                    screenwidth = Math.round(screenheight * 1.78);
+                    document.getElementById("calculated_width").value = screenwidth;
+                }
+                else if(document.getElementById("seventeenbynine").checked){
+                    screenwidth = Math.round(screenheight * 1.89);
+                    document.getElementById("calculated_width").value = screenwidth;
+                }
+                else if(document.getElementById("twentyonebynine").checked){
+                    screenwidth = Math.round(screenheight * 2.37);
+                    document.getElementById("calculated_width").value = screenwidth;
+                }
+                else if(document.getElementById("thirtytwobynine").checked){
+                    screenwidth = Math.round(screenheight * 3.56);
+                    document.getElementById("calculated_width").value = screenwidth;
+                }
+                else if(document.getElementById("fourbyone").checked){
+                    screenwidth = Math.round(screenheight * 4);
+                    document.getElementById("calculated_width").value = screenwidth;
+                }
+            // }
+        }
+    });
 }
 
 function constructstory() {
@@ -146,4 +249,17 @@ function constructstory() {
         name + verb1 + "</span> and <span>" + verb2 + "</span> until finally <span>" +
         name + "</span> arrived at the <span>" + place1 + "</span> so they could <span>" +
         activity1 + "</span> the <span>" + noun1 + "</span>. And they did!</p>";
+}
+
+function ChangeImage() {
+    index++;
+    if (index > images.length - 1) {
+        index = 0
+    }
+    document.getElementById("picture").src = images[index];
+    document.getElementById("caption").innerHTML=captions[index];
+}
+
+function PauseSlideShow() {
+    clearInterval(timer);
 }
