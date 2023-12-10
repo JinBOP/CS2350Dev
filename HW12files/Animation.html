@@ -4,10 +4,10 @@
 <head>
 <meta charset="UTF-8">
 
-<title>TODO</title>
+<title>Pokémon Guess</title>
 
-<meta name="description" content="TODO">
-<meta name="keywords" content="TODO">
+<meta name="description" content="guess who's that pokémon">
+<meta name="keywords" content="pokémon, guess, game, animation, reveal, mystery">
 <meta name="author" content= "H Starks">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,7 +18,7 @@
 <body>
 
 <header>
-    TODO
+    Guess The Pokémon!
 </header>
 
 <div class="row">
@@ -36,7 +36,10 @@
             Scott Pilgrim Slideshow</a></li>
         <li><a href="https://icarus.cs.weber.edu/~hs61996/HW10files/Form.html"
             title="Go to page where you can see your initials converted into Binary or Hexadecimal code">
-            Name Change Form</a></li>
+            Screensize Form</a></li>
+        <li><a href="https://icarus.cs.weber.edu/~hs61996/HW12files/Animation.html"
+            title="Go to page and see what Pokémon is hidden">
+            Guess The Pokémon</a></li>
         <li>
             <div class="dropdown">
                 <button>Tutorials &#x25BC;</button>
@@ -54,29 +57,25 @@
 </nav>
 </div>
 
-<script src="functions.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="functions.js"></script>
 <main class="col-10 col-m-8">
 
-<!-- <div>
-<h2 class="sue">Sue's Diner</h2>
-<h2 class="grand">Grand Opening</h2>
-
-<img class="purple" src="resources/purplefire_opt.png"
-  alt="purple fireworks" width="0"  height="0">
-<img class="green" src="resources/greenfire_opt.png"
+<div>
+<img class="backdrop" src="resources/whosthatpokemon.png"
+  alt="whos that pokémon backdrop" width="720"  height="405">
+<!-- <img class="green" src="resources/greenfire_opt.png"
   alt="green fireworks" width="0" height="0">
 <img class="red" src="resources/redfire_opt.png"
-  alt="red fireworks" width="0"  height="0">
+  alt="red fireworks" width="0"  height="0"> -->
 </div>
 
-<button id="fireworks">Fireworks!</button> -->
+<button id="reveal">Reveal!</button>
 
 </main>
 
-<aside class="col-2 col-m-4">
-<div class="row">
+<aside>
 </aside>
-
 
 <footer class="col-2 col-m-4">
 Site made entirely by: H. 'Jin' Starks
