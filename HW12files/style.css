@@ -280,7 +280,7 @@ button {
     box-shadow:none;
 }
 
-span {
+span{
     font-weight:bold;
     color:#faebd7;
     background-color:#000080;
@@ -292,6 +292,14 @@ span {
 
 #text_labels{
     text-align:center;
+}
+
+.backdrop{
+    margin-left:180px;
+}
+
+.silouette, .answer{
+    margin-left:300px;
 }
 
 @media only screen and (min-width:812px) {
