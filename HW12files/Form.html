@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8">
+
+<title>HTML Form</title>
+
+<meta name="description" content="find number of pixels on a screen">
+<meta name="keywords" content="htmlform, form, html, ratio">
+<meta name="author" content= "H Starks">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/png" href="resources/favicon-32x32.png">
+</head>
+
+<body>
+
+<header>
+    HTML Form Page
+</header>
+
+<div class="row">
+<nav class="col-12 col-m-8">
+    <ul>
+        <li><a href="https://icarus.cs.weber.edu/~hs61996/HW2files/portfolio.html"
+            title="Go to Main Portfolio Page">Main Portfolio Page</a></li>
+        <li><a href="https://icarus.cs.weber.edu/~hs61996/HW1files/hw1.html"
+            title="Go to page about the heavy weapons guy">About The Heavy</a></li>
+        <li><a href="https://icarus.cs.weber.edu/~hs61996/HW8files/MadLibs.html"
+            title="Go to page where you can create your own story">
+            Create A Story</a></li>
+        <li><a href="https://icarus.cs.weber.edu/~hs61996/HW9files/Slideshow.html"
+            title="Go to page where you can see a slideshow about the protagonists in the Scott Pilgrim graphic novel series">
+            Scott Pilgrim Slideshow</a></li>
+        <li><a href="https://icarus.cs.weber.edu/~hs61996/HW10files/Form.html"
+            title="Go to page where you can find how many pixels are on a screen">
+            Screen Pixel Form</a></li>
+        <li><a href="https://icarus.cs.weber.edu/~hs61996/HW12files/Animation.html"
+            title="Go to page and see what Pokémon is hidden">
+            Guess The Pokémon</a></li>
+        <li>
+            <div class="dropdown">
+                <button>Tutorials &#x25BC;</button>
+                <div class="dropdown-content">
+                <a href="https://icarus.cs.weber.edu/~hs61996/HW2files/publish.html" 
+                title="Go to tutorial page on how to publish a webpage on the Icarus Web server"> 
+                Publishing Tutorial</a>
+                <a href="https://icarus.cs.weber.edu/~hs61996/HW3files/stylesheetguide.html" 
+                title="Go to tutorial page on how to compose a CSS stylesheet"> 
+                Stylesheet Guide</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</nav>
+</div>
+
+<script src="functions.js"></script>
+<main class="col-10 col-m-8">
+<form method="post" action="http://icarus.cs.weber.edu/~linda/cs2350/submit.php">
+
+<h2>Discover the Number of Pixels on a Screen!</h2>
+
+<fieldset id="find">
+<legend>Find What?</legend>
+    <p>
+        <input type="radio" name="find" id="give_width" value="screen_width">
+        <label for="give_width">Screen Width</label>
+    </p>
+    <p>
+        <input type="radio" name="find" id="give_height" value="screen_height">
+        <label for="give_height">Screen Height</label>
+    </p>
+    <p>
+        <input type="radio" name="find" id="give_ratio" value="screen_ratio">
+        <label for="give_ratio">Exact Ratio</label>
+    </p>
+</fieldset>
+
+<fieldset id="aspect_ratio">
+<legend>Aspect Ratio:</legend>
+    <p>
+        <input type="radio" name="aspect" id="onebyone" value="1:1">
+        <label for="onebyone">1:1</label>
+    </p>
+    <p>
+        <input type="radio" name="aspect" id="fourbythree" value="4:3">
+        <label for="fourbythree">4:3</label>
+    </p>
+    <p>
+        <input type="radio" name="aspect" id="fivebyfour" value="5:4">
+        <label for="fivebyfour">5:4</label>
+    </p>
+    <p>
+        <input type="radio" name="aspect" id="threebytwo" value="3:2">
+        <label for="threebytwo">3:2</label>
+    </p>
+    <p>
+        <input type="radio" name="aspect" id="sixteenbyten" value="16:10">
+        <label for="sixteenbyten">16:10</label>
+    </p>
+    <p>
+        <input type="radio" name="aspect" id="sixteenbynine" value="16:9">
+        <label for="sixteenbynine">16:9</label>
+    </p>
+    <p>
+        <input type="radio" name="aspect" id="seventeenbynine" value="17:9">
+        <label for="seventeenbynine">17:9</label>
+    </p>
+    <p>
+        <input type="radio" name="aspect" id="twentyonebynine" value="21:9">
+        <label for="twentyonebynine">21:9</label>
+    </p>
+    <p>
+        <input type="radio" name="aspect" id="thirtytwobynine" value="32:9">
+        <label for="thirtytwobynine">32:9</label>
+    </p>
+    <p>
+        <input type="radio" name="aspect" id="fourbyone" value="4:1">
+        <label for="fourbyone">4:1</label>
+    </p>
+</fieldset>
+
+<fieldset id="pixels">
+<legend>Screen Info</legend>
+    <h3 class="input_header" id="text_labels"> </h3>
+    <p id="screen_width_input">
+        <label for="given_width">Enter Screen Width</label>
+        <input type="text" name="given_width" id="given_width" value=0>
+        <input type="text" id="calculated_height" 
+        name="calculated_height" value=0 readonly>
+    </p>
+    <p id="screen_height_input">
+        <label for="given_height">Enter Screen Height</label>
+        <input type="text" name="given_height" id="given_height" value=0>
+        <input type="text" id="calculated_width" 
+        name="calculated_width" value=0 readonly>
+    </p>
+    <p id="screen_ratio_input">
+        <label for="exact_ratio_width">Exact Ratio</label>
+        <input type="text" name="exact_ratio_width" id="exact_ratio_width" value=0 readonly>
+        <input type="text" name="exact_ratio_height" id="exact_ratio_height" value=0 readonly>
+    </p>
+</fieldset>
+
+<fieldset id="display_total_pixels">
+<legend>Total Screen Pixels</legend>
+    <p id="pixel_total">[total]</p>
+
+</fieldset>
+
+<p><input type="submit" name="submit" value="submit"></input></p>
+
+</form>
+</main>
+
+<aside class="col-2 col-m-4">
+<div class="row">
+</aside>
+
+
+<footer class="col-2 col-m-4">
+Site made entirely by: H. 'Jin' Starks
+</footer>
+</body>
+</html>
