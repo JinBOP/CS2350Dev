@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Accessing arrays</h2>
+
+
+<p id="demo"></p>
+<button id="previous">previous</button>
+<button id="next">next</button>
+<script>
+window.addEventListener("load", AddListeners);  // loads event listeners when loading in webpage
+
+var cars = new Array("BMW", "Toyota", "Nissan", "Ford", "GM"); // creates new Array
+var index = 0;  // adds index variable for keeping track of which item in the Array is being viewed
+
+document.getElementById("demo").innerHTML = cars[index];
+
+function AddListeners(){
+    document.getElementById("previous").addEventListener("click", function(){
+        index--;    // steps back to the previous item in the Array
+        if (index < 0){ // statement to loop back around to the end if stepping back in list when at beginning
+            index = 4;
+        }
+        document.getElementById("demo").innerHTML = cars[index];
+    });
+    document.getElementById("next").addEventListener("click", function(){
+        index++;    // steps forward to the next item in the Array
+        if (index > 4){ // statement to loop back around to the beginning if stepping forward in list when at end
+            index = 0;
+        }
+        document.getElementById("demo").innerHTML = cars[index];
+    })
+}
+
+</script>
+
+</body>
+</html>

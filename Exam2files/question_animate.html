@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){ // runs animations when button is clicked
+    $('p').hide(2000, function(){ // slowly hides element
+      $('p').show(2000);  // slowly shows element
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Hide and Show</button>
+
+<p>Hide this slowly and then bring back slowly.</p>
+
+</body>
+</html>

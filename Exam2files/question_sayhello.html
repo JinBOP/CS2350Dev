@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Say hello on button click</h2>
+
+<p>using event listener to call a function</p>
+
+<button id="myBtn">Say Hello</button>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", sayHello); // fixed the mislabeled function, changed from 'sayhello' to 'sayHello'
+
+function sayHello() {
+document.getElementById("demo").innerHTML = "hello";
+}
+</script>
+
+</body>
+</html>
+
+ 

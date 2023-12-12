@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="functions.js"></script>
+</head>
+
+<body>
+<form action="https://icarus.cs.weber.edu/~linda/cs2350/submit.php" method="post">
+    <fieldset>
+    <legend>Order Raffle Tickets</legend>
+        <p><label for="raffletickets">How many raffel tickets would you like?</label>
+        <input type="text" name="raffletickets" id="raffletickets"></p>
+        <p><label for="odds">What odds would you like?</label>
+            <select name="odds" id="odds">
+            <option value="0">Regular Odds</option>
+            <option value="1">Plus Odds</option>
+            <option value="2">Super Odds</option>
+            </select>
+        </p>
+    </fieldset>
+    <fieldset>
+    <legend>Total</legend>
+        <p><label for="totalcost">Total cost</label>
+        <input type="text" name="totalcost" id="totalcost" readonly></p>
+        <p><input type="submit" id="submit" value="Submit" 
+        name="submit"></p>
+    </fieldset>
+</form>
+</body>
+</html>

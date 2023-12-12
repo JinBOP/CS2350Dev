@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $(".test").hide();  // fixed identification from identifying an id to identifying a class by changing from '#test' to '.test'
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+
+<p class="test">This paragraph needs to be deleted.</p>
+<p class="test">This paragraph also needs to be deleted.</p>
+
+<button>Hide all paragraphs.</button>
+
+</body>
+</html>

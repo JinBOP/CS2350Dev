@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The select Element</h2>
+
+
+<legend>The select element defines a drop-down list:</legend>
+    <label for="car">Choose a car:</label>
+    <select id="car">
+        <option value="0">GM</option>
+        <option value="1">Ford</option>
+        <option value="2">Toyota</option>
+        <option value="3">Nissan</option>
+        <option value="4">BMW</option>
+        <option value="5">Volvo</option>
+    </select>
+<button id="selection">Car Selected!!!!</button>
+<p id="demo"></p>
+<script>
+window.addEventListener("load", AddListeners);  // loads event listeners when loading in webpage
+
+var cars = new Array("GM", "Ford", "Toyota", "Nissan", "BMW", "Volvo"); // creates new Array
+
+document.getElementById("demo").innerHTML = "You selected: ";
+
+function AddListeners(){
+    document.getElementById("selection").addEventListener("click", function(){  // updates display when button is pressed
+        var car = cars[document.getElementById("car").value]
+        document.getElementById("demo").innerHTML = "You selected: " + car; // displays selected car
+    });
+}
+
+</script>
+
+</body>
+</html>
